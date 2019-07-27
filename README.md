@@ -1,29 +1,43 @@
-# pizza-sales-prediction
+# Pizza Sales Prediction
+Project purpose is prediction of future values in a time series which are sales of a pizza company. To implement forecasts SARIMA model fitting is used.
 
 ## Project setup
+Python Flask web framework was used to implement API functionalities. You need to use following packages to run API module:
 ```
-npm install
+flask
+flask-cors
+flask-bcrypt
+pandas
+statsmodels
+xlrd
+openpyxl
 ```
+To install them easily run the commands bellow on the terminal:
+```
+$ cd server
+$ pip install -r requirements.txt
+```
+App needs to a database for store user and task data. To create database schema run the following command:
+```
+$ python database_creator.py
+```
+Front-end functionalities implemented with Vue.js framework. To install related modules run the following command:
+```
+$ npm install
+```
+We installed server-side packages and created a database. Also installed front-end packages. Setup is completed now.
 
 ### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Open two terminals and go to `server` directory on one of them. Run the `$ python run.py` command.
+On the other terminal run the `$ npm run serve` command.
 
-### Compiles and minifies for production
+## Usage
+Open your browser and go to `http://127.0.0.1:8080` address.
+App will greet you with a login screen. Default login credentials are 
 ```
-npm run build
+username: admin
+password: 123456
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+You can create a new user from `http://127.0.0.1:8080/register` address.
+To create a new task go to `Create Task` page from navbar. 
+Dataset files must be in `server` directory. 
