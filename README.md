@@ -21,6 +21,7 @@ App needs to a database for store user and task data. To create database schema 
 ```
 $ python database_creator.py
 ```
+Move the database file to `api` directory.
 Front-end functionalities implemented with Vue.js framework. To install related modules run the following command:
 ```
 $ npm install
