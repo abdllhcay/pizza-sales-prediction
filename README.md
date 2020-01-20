@@ -1,5 +1,5 @@
 # Pizza Sales Prediction
-Project purpose is prediction of future values in a time series which are sales of a pizza company. To implement forecasts SARIMA model fitting is used.
+Project's purpose is prediction of future values in a time series which are sales of a pizza company. To implement forecasts SARIMA model fitting is used.
 
 ## Project setup
 Python Flask web framework was used to implement API functionalities. You need to use following packages to run API module:
